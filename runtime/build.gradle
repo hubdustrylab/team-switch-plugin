@@ -1,0 +1,31 @@
+plugins {
+    id 'java-library'
+}
+
+group = rootProject.group
+version = rootProject.version
+
+repositories {
+    mavenCentral()
+}
+
+def engine = files(rootProject.tasks.named('prepareMindustry'))
+dependencies {
+    compileOnlyApi engine
+    testImplementation engine
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.11.4'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    from(rootProject.file('LICENSE')) {
+        into 'META-INF'
+        rename { 'team-switch-LICENSE.txt' }
+    }
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}

@@ -1,0 +1,10 @@
+{
+  "name": "server-with-team-switch",
+  "displayName": "Server with Team Switch",
+  "author": "Hubdustry",
+  "description": "Example server plugin with the Team Switch runtime.",
+  "main": "example.server.ExampleServerPlugin",
+  "version": "1.0.0",
+  "minGameVersion": "160",
+  "java": true
+}

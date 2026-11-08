@@ -1,0 +1,4 @@
+rootProject.name = 'team-switch-plugin'
+
+include 'team-switch-runtime'
+project(':team-switch-runtime').projectDir = file('runtime')
