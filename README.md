@@ -3,6 +3,8 @@
 Team selection for Mindustry PvP servers. Install the JAR or add the runtime to your server plugin.
 The server checks team sizes before each change.
 
+![Team selection and confirmation](docs/images/workflow.gif)
+
 ## Install
 
 Use Mindustry v160 or v160.7 and Java 17 or later.
